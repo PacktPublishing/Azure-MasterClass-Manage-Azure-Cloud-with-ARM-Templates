@@ -1,0 +1,297 @@
+Quiz –
+
+
+==============
+Module - 1
+==============
+
+
+
+1.	ARM Templates are based on 
+a.	XML
+b.	HTML
+c.	JSON
+d.	YML
+Feedback:
+Incorrect if (a) is chosen. This is not quite correct. ARM templates aren’t based on XML
+Incorrect if (b) is chosen. This is not quite correct. ARM templates aren’t based on HTML
+Correct if (c) is chosen. This is correct. ARM templates are based on JSON. So when you go onto the Azure portal and try to create a virtual machine then your portal communicates with Azure backend with in the form of JSON files only or JSON syntax only.
+Incorrect if (d) is chosen. This is not quite correct. ARM templates aren’t based on YML.
+
+2.	What are all methods through which Azure templates can be deployed?
+
+a. Azure CLI
+b. Azure PowerShell
+c. Azure Portal
+d. Azure ARM Rest Services
+e. All Of the Above
+
+Feedback:
+Partially Correct. a.	This is only partially correct. Azure CLI – Azure ARM templates can be deployed with Azure Command Line Tools.
+Partially Correct. b.	This is only partially correct. Azure PowerShell – You can used Azure PowerShell and login into Azure subscription and then you can perform same activities as like Azure CLI. Azure Powershell provides cmdlets which are called as commands to perform activities on Azure subscription through command lines.
+Partially Correct. c.	This is only partially correct. Azure Portal – You can also use Azure Portal to deploy the Azure ARM templates.
+Partially Correct. d.	This is only partially correct. Azure ARM Rest Services – There are Azure REST APIs which can also be used to deploy the ARM templates.
+Correct. e. All OF the above. That is correct
+
+
+3.	Which of these components of Azure ARM templates are NOT mandatory?
+a.	$Schema
+b.	ContentVersion
+c.	Resources
+d.	Parameters
+
+Feedback:
+Incorrect if (a) is chosen. This is not quite correct. Schema is always required to be present in Template. 
+Incorrect if (b) is chosen. This is not quite correct. ContentVersion is a required attribute.
+Incorrect if (c) is chosen. This is not quite correct. Resource is also required to be present in Template.
+Correct if (d) is chosen. This is correct. Parameters are option for Azure ARM templates.
+
+4.	Visual Studio Code Tool is lightweight tool provide by Microsoft, if is licensed tool which comes free with Azure subscription otherwise you need to pay for it, if buy without Azure Subscription
+a.	True
+b.	False
+
+Feedback:
+Incorrect if (a) is chosen. This is not quite correct. It’s free of cost, you don't need to pay for any licence and it's also open source
+Correct if (b) is chosen. This is correct. It’s free of cost, you don't need to pay for any licence and it's also open source
+
+5.	There is no way to provide the user defined values to the templates while execution
+a.	True
+b.	False
+
+Feedback:
+Incorrect if (a) is chosen. This is not quite correct. You can send the values to templates while execution.
+Correct if (b) is chosen. This is correct. Parameters have the values which you can take from the user.
+
+
+
+
+==============
+Module - 2
+==============
+
+6.	What is the size limit for a template and Parameters? Choose the correct one from below options.
+a.	Template size 1 MB, Parameter size 128 KB
+b.	Template size 1 MB, Parameter size 64 KB
+c.	Template size 5 MB, Parameter size 64 KB
+d.	Template size 5 MB, Parameter size 128 KB
+
+Feedback:
+Incorrect if (a) is chosen. This is not quite correct. Template size limit is 1 MB but parameter size limit is not correct. 
+Correct if (b) is chosen. This is correct. Template size limit is 1 MB and parameter size limit is 64 KB
+Incorrect if (c) is chosen. This is not quite correct. Parameter size limit is 64 KB, but template size limit is not correct. 
+Incorrect if (d) is chosen. This is not quite correct. Both Parameter and Template limits mentioned in this option are incorrect as the correct limits are mentioned in option a.
+
+7.	Identify which one of below mentioned limits in numbers are incorrect?
+a.	Parameters – 256
+b.	Variables – 256
+c.	Output – 64
+d.	Resources - 256
+Feedback:
+Incorrect if (a) is chosen. This is correct. There can be 256 parameters.
+Incorrect if (b) is chosen. This is correct. There can be 256 variables in a template.
+Incorrect if (c) is chosen. This is correct. There can be 64 output in a template. 
+Correct if (d) is chosen. This is not correct limit. There can be 800 resources in a template.
+
+
+8.	A parameter file is optional for ARM templates
+a.	True 
+b.	False
+Feedback:
+Correct if (a) is chosen. This is correct. Parameter file is used only when ARM templates are having any parameters defined.
+Incorrect if (b) is chosen. This is not quite correct. Parameter file is not mandatory.
+
+9.	Identify the incorrect information mentioned about variables
+a.	Use variables for values that you need to use more than once in a template. If a value is used only once, a hard-coded value makes your template easier to read.
+b.	You cannot use the reference function in the variables section of the template. 
+c.	You cannot group variables into complex objects. 
+d.	Include variables for resource names that must be unique.
+
+Feedback:
+Incorrect if (a) is chosen. This is correct information. Using variables for the values which are defined multiple times in a template is always a good practice.
+Incorrect if (b) is chosen. This is correct information. You can’t use reference function for variables in a template.
+Correct if (c) is chosen. This is incorrect information. Actually you can group all the variables into an object. 
+Incorrect if (d) is chosen. This is correct information. We should include the variables for the resource names that must be unique.
+
+10.	Which sections is used to give out the information about Azure resource built in ARM templates
+a.	Parameters
+b.	Resources
+c.	Variables
+d.	Output
+
+Feedback:
+Incorrect if (a) is chosen. This is not quite correct. Parameters section is used to define the parameters to be used in ARM templates.
+Incorrect if (b) is chosen. This is not quite correct information. Resource section is used to define the resource details to be generated out or ARM templates.
+Incorrect if (c) is chosen. This is not quite correct. Variables section is used to provide the values which are calculated within ARM templates during run time.
+Correct if (d) is chosen. This is correct. Output section is used to give out the information to the end user once ARM Templates executes. 
+
+
+==============
+Module - 3
+==============
+
+
+11.	Identify the incorrect information out of below mentioned information.
+a.	ContentVersion is used to specify the version of the template you are authoring.
+b.	Parameters defined in your resource template needs to be entered prior to starting the deployment.
+c.	The properties element is used to describe the resource specific properties and the valid values for this are dependent on the resource type.
+d.	You can’t define the complex type values in variables.
+
+Feedback:
+Incorrect if (a) is chosen. This is correct information. ContentVersion is used to specify the version of the template you are authoring.
+Incorrect if (b) is chosen. This is correct information. Parameters defined in your resource template needs to be entered prior to starting the deployment.
+Incorrect if (c) is chosen. This is correct information. The properties element is used to describe the resource specific properties and the valid values for this are dependent on the resource type.
+Correct if (d) is chosen. This is incorrect information. Variables can be used to define the complex values as well as standard values.
+
+
+12.	Choose the incorrect statement/s about Parameters in ARM templates.
+a.	Parameters are used to provide flexibility within the function.
+b.	It is used to not hard code any values that are really user-specific.
+c.	Parameters defined in your resource template need to be entered prior to starting the deployment.
+d.	Parameters are used to draw a line between the free-form and known configurations.
+
+Feedback:
+Incorrect if (a) is chosen. This is correct information. Parameters are basically used to provide the flexibility within ARM templates, so that users can provide the values during the run time.
+Incorrect if (b) is chosen. This is correct information. Yes parameters are used to avoid the hardcode values in ARM templates, also it gives more dynamic feature to ARM templates.
+InCorrect if (c) is chosen. This is correct information. Actually parameters have to be defined before the deployment, if you don’t define the value for any parameter used in ARM template, it will throw an error during execution.
+Correct if (d) is chosen. This is incorrect information. Yes we define the parameters so that we can define the boundaries in templates for configurations and free from fields.
+
+13.	Choose the incorrect element which is not part of the Output component in ARM templates.
+a.	Value
+b.	Type
+c.	Metadata
+d.	OutputName
+
+Feedback:
+Incorrect if (a) is chosen. This is correct element. Value is used to get the actual value of the output which is received as part of template execution. It can be hostname, Machine IP etc.
+Incorrect if (b) is chosen. This is correct element. Type is used to get the type of value which is received as part of output.
+Correct if (c) is chosen. This is incorrect information. Metadata is not the part of output elements.
+Incorrect if (d) is chosen. This is correct element. OutputName is the name of the output. It can be any name defined in Output. There can be multiple output names in an output section.
+
+14.	Identify incorrect statement in terms of nested templates best practices.
+a.	Nested template is used for all types of input parameters. 
+b.	Shared resource template is used to deploy all of the resources that are very mandatory for our environment deployment.
+c.	Optional resource template is used to deploy those resources which are optional in nature 
+d.	Member resource templates such as VM creation template, VNet Creation template etc. These are reusable or custom script which can be used with multiple resource templates. 
+
+Feedback:
+Correct if (a) is chosen. This is incorrect practice.  This is actually main templates which are more to be used for getting the input parameters.
+InCorrect if (b) is chosen. This is correct practice. Shared resource template is used to deploy all of the resources that are very mandatory for our environment deployment.
+InCorrect if (c) is chosen. This is correct practice. Optional resource template is used to deploy those resources which are optional in nature 
+Incorrect if (d) is chosen. This is correct practice. Member resource templates such as VM creation template, VNet Creation template etc. These are reusable or custom script which can be used with multiple resource templates
+
+15.	Users can define configuration settings (properties) directly in the resource or populate them from parameters and/or variables.
+a.	True
+b.	False
+Feedback:
+Correct if (a) is chosen. This is correct. During the resource configurations, you can configure the settings to provide values either from a variable or from a parameters and you can also provide the values as hard coded, which certainly is not a good practice.
+Incorrect if (b) is chosen. This is incorrect. As explain, ARM templates provides us the flexibility to provide values through Parameters/variables during ARM definitions.
+
+
+==============
+Module 04
+==============
+
+16.	Identify the correct command for creating the resource group via Azure PowerShell.
+a.	New-AzureRmResourceGroupDeployment
+b.	Set-AzureRmCurrentStorageAccount
+c.	Set-AzureRmResourceGroupDeployment
+d.	New-AzureRmResourceGroup
+
+Feedback:
+InCorrect if (a) is chosen. This is not quite correct.  This command is used to deploy the template in the resource group.
+Incorrect if (b) is chosen. This is not quite correct. This command is used to set the storage account into the resource group
+Incorrect if (c) is chosen. This is not quite correct. This command is used set the deployment for one of the existing resource group. 
+Correct if (d) is chosen. This is correct.  This command is used to create the new source group.
+
+
+17.	Identify the incorrect. Azure IaaS services includes
+a.	Azure VMs
+b.	Azure SQL Elastic Pool
+c.	Azure Storage Accounts
+d.	Azure VNet services
+
+Feedback:
+Incorrect if (a) is chosen. This is correct information.  Azure VMs is part of Azure IaaS stack.
+Correct if (b) is chosen. This is incorrect information. Azure SQL Elastic Pool is basically part of Azure PaaS stack
+Incorrect if (c) is chosen. This is correct information. Azure Storage is part of Azure IaaS stack. 
+Incorrect if (d) is chosen. This is correct information. Azure Vnet is part of Azure IaaS stack.
+
+18.	If a templates has been values syntactically error free, it means it will also run without any error
+a.	True
+b.	False
+
+Feedback:
+Incorrect if (a) is chosen. This is not quite true. This may not be the case always, even if the template is error free during syntax check, it could still have issues during execution. It can have issues for undefined parameters etc.
+Correct if (b) is chosen. This is false statement actually, because a template can have many other types of errors like values aren’t provided in defined measures and can give error during execution.
+
+
+19.	Returns the unique identifier of a resource. You use this function when the resource name is ambiguous or not provisioned within the same template. What is the name of function referred here in this statement?
+a.	resourceGroup
+b.	resourceId
+c.	subscription
+d.	providers
+
+Feedback:
+Incorrect if (a) is chosen. This is not quite true. resourceGroup function returns an object that represents the current resource group. +
+Correct if (b) is chosen. This is correct. ResourceID function returns the unique identifier of the resource.
+Incorrect if (c) is chosen. This is not quite true. Subscription function returns details about the subscription for the current deployment.
+Incorrect if (d) is chosen. This is not quite true. Providers function returns information about a resource provider and its supported resource types. If you do not provide a resource type, the function returns all the supported types for the resource provider.
+
+20.	VNet Peering is used to provide the connection b/w Azure virtual networks
+a.	True
+b.	False
+Feedback:
+Correct if (a) is chosen. This is correct.  Vnet Peering is actually gives you connection between Azure virtual networks, so aside to set connections we can establish a side to side connection between two Azure virtual networks extending our virtual network on Azure..
+Incorrect if (b) is chosen. This is not quite correct.
+
+
+
+
+==============
+Module – 5
+==============
+
+
+21.	Not all of your resources are subscribed and you may not subscribed for all of you resources in all of the location in your IaaS subscription
+a.	True
+b.	False
+Feedback:
+Correct if (a) is chosen. This is correct. You may get the error like “Missing registration for location” if you aren’t subscribed to a particular location. In this case you need to provide the location where you are subscribed.
+Incorrect if (b) is chosen. This is not false statement, this is actually true as explained.
+
+22.	You can’t define the functions within tags elements
+a.	True
+b.	False
+
+Feedback:
+Incorrect if (a) is chosen. This is not correct. You can define the functions within tag elements.
+Incorrect if (b) is chosen. This is correct. Not only function, while defining the tags element, you can pass hardcode values, JSON string or an object itself.
+23.	What is the incorrect measures to calculate DTU?
+a.	CPU
+b.	Memory
+c.	Reads
+d.	Cache
+
+Feedback:
+Incorrect if (a) is chosen. This is correct measure actually. CPU is one of the measure through which you can calculate DTU, which is basically a database transaction unit.
+Incorrect if (b) is chosen. This is correct measure actually. Memory is one of the measure through which you can calculate DTU.
+Incorrect if (a) is chosen. This is correct measure actually. Read is one of the measure through which you can calculate DTU.
+Incorrect if (b) is chosen. This is correct. Cache is not the correct measure for calculating the DTU. The forth measure is basically writes.
+
+24.	You can’t deploy two different services using single Azure ARM e.g. WebApp and SQL
+a.	True
+b.	False
+
+Feedback:
+Incorrect if (a) is chosen. This is not true actually. You can deploy as many different types of services through Azure ARM templates.
+Correct if (b) is chosen. This is false statement. You can deploy as many different types of services through Azure ARM templates.
+
+
+25.	SQL Server installed and hosted in the cloud on Windows Server Virtual Machines (VMs) running on Azure is known as Azure PaaS
+a.	True
+b.	False
+
+Feedback:
+Incorrect if (a) is chosen. This is not true actually. SQL Server installed and hosted in the cloud on Windows Server Virtual Machines (VMs) running on Azure is known as IaaS.
+Correct if (b) is chosen. This is false statement. A SQL database native to the cloud is known as a platform as a service (PaaS) database or a database as a service (DBaaS)
+
