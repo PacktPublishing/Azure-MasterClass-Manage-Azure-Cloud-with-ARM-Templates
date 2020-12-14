@@ -1,3 +1,8 @@
+## $5 Tech Unlocked 2021!
+[Buy and download this Video for only $5 on PacktPub.com](https://www.packtpub.com/product/azure-masterclass-manage-azure-cloud-with-arm-templates-video/9781789531763)
+-----
+*The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
+
 # Azure MasterClass: Manage Azure Cloud with ARM Templates [Video]
 This is the code repository for [Azure MasterClass: Manage Azure Cloud with ARM Templates [Video]](https://www.packtpub.com/virtualization-and-cloud/architecting-high-availability-azure-video?utm_source=github&utm_medium=repository&utm_campaign=9781788396158), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the video course from start to finish.
 ## About the Video Course
